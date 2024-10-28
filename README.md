@@ -11,10 +11,10 @@ FreeTube is a feature-rich Android movie app where users can explore and save mo
 ## 🖼️ Screenshots
 
 ### Home Screen
-![Home Screen](screenshots/home.png)
+![Home Screen](screenshots/home.jpeg)
 
-### Movie Details
-![Movie Details](screenshots/details.png)
+### Language Select
+![Movie Details](screenshots/lang.jpeg)
 
 ### Favorites
-![Favorites Screen](screenshots/favorites.png)
+![Favorites Screen](screenshots/saved.jpeg)
