@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/language_english"
+            android:title="English"
+            android:checked="true"/>
+        <item
+            android:id="@+id/language_spanish"
+            android:title="Spanish"/>
+        <item
+            android:id="@+id/language_french"
+            android:title="French"/>
+        <!-- Add more languages as needed -->
+    </group>
+</menu>

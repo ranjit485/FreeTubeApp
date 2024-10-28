@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shimmer_view_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="0dp"
+    app:shimmer_auto_start="true"
+    app:shimmer_duration="1500"
+    app:shimmer_repeat_count="100000"
+    app:shimmer_repeat_delay="500">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:paddingStart="3dp"
+        android:paddingEnd="3dp">
+
+        <!-- Shimmer Card View 1 -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/shimmer_home_video_card_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0dp"
+            app:cardBackgroundColor="?attr/cardBackgroundColor"
+            app:strokeWidth="0dp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/shimmer_home_video_thumbnail_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@android:color/darker_gray"
+                    android:scaleType="centerCrop"/>
+
+                <Button
+                    style="?attr/materialIconButtonFilledTonalStyle"
+                    android:id="@+id/shimmer_play_icon_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/shimmer_home_video_thumbnail_1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="75dp"
+                    android:focusable="true"
+                    android:backgroundTint="#60191C20"
+                    android:soundEffectsEnabled="true"
+                    app:icon="@drawable/play_fill"
+                    app:iconTint="@color/white" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shimmer_home_video_thumbnail_1"
+                    android:padding="8dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/shimmer_channel_logo_1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@android:color/darker_gray"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/shimmer_home_video_title_1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:maxLength="35"
+                        android:maxLines="2"
+                        android:background="@android:color/darker_gray"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/shimmer_channel_logo_1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <TextView
+                        android:id="@+id/shimmer_channel_name_1"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Material3.LabelSmall"
+                        android:background="@android:color/darker_gray"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/roboto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/shimmer_channel_logo_1"
+                        app:layout_constraintTop_toBottomOf="@id/shimmer_home_video_title_1" />
+
+                    <TextView
+                        android:id="@+id/shimmer_duration_1"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:maxLength="6"
+                        style="@style/TextAppearance.Material3.LabelSmall"
+                        android:background="@android:color/darker_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/shimmer_channel_name_1"
+                        app:layout_constraintTop_toBottomOf="@id/shimmer_home_video_title_1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Shimmer Card View 2 -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/shimmer_home_video_card_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0dp"
+            app:cardBackgroundColor="?attr/cardBackgroundColor"
+            app:strokeWidth="0dp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/shimmer_home_video_thumbnail_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@android:color/darker_gray" />
+
+                <Button
+                    style="?attr/materialIconButtonFilledTonalStyle"
+                    android:id="@+id/shimmer_play_icon_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/shimmer_home_video_thumbnail_2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="75dp"
+                    android:focusable="true"
+                    android:backgroundTint="#60191C20"
+                    android:soundEffectsEnabled="true"
+                    app:icon="@drawable/play_fill"
+                    app:iconTint="@color/white" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shimmer_home_video_thumbnail_2"
+                    android:padding="8dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/shimmer_channel_logo_2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@android:color/darker_gray"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/shimmer_home_video_title_2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:maxLength="35"
+                        android:maxLines="2"
+                        android:background="@android:color/darker_gray"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/shimmer_channel_logo_2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <TextView
+                        android:id="@+id/shimmer_channel_name_2"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        style="@style/TextAppearance.Material3.LabelSmall"
+                        android:background="@android:color/darker_gray"
+                        android:layout_marginStart="8dp"
+                        android:fontFamily="@font/roboto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/shimmer_channel_logo_2"
+                        app:layout_constraintTop_toBottomOf="@id/shimmer_home_video_title_2" />
+
+                    <TextView
+                        android:id="@+id/shimmer_duration_2"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        style="@style/TextAppearance.Material3.LabelSmall"
+                        android:maxLength="6"
+                        android:background="@android:color/darker_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/shimmer_channel_name_2"
+                        app:layout_constraintTop_toBottomOf="@id/shimmer_home_video_title_2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Shimmer Card View 3 -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/shimmer_home_video_card_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0dp"
+            app:cardBackgroundColor="?attr/cardBackgroundColor"
+            app:strokeWidth="0dp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/shimmer_home_video_thumbnail_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@android:color/darker_gray" />
+
+                <Button
+                    style="?attr/materialIconButtonFilledTonalStyle"
+                    android:id="@+id/shimmer_play_icon_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/shimmer_home_video_thumbnail_3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="75dp"
+                    android:focusable="true"
+                    android:backgroundTint="#60191C20"
+                    android:soundEffectsEnabled="true"
+                    app:icon="@drawable/play_fill"
+                    app:iconTint="@color/white" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shimmer_home_video_thumbnail_3"
+                    android:padding="8dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/shimmer_channel_logo_3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@android:color/darker_gray"
+                        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/shimmer_home_video_title_3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:maxLength="35"
+                        android:maxLines="2"
+                        android:background="@android:color/darker_gray"
+                        android:textSize="16sp"
+                        app:layout_constraintStart_toEndOf="@id/shimmer_channel_logo_3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <TextView
+                        android:id="@+id/shimmer_channel_name_3"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/darker_gray"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        style="@style/TextAppearance.Material3.LabelSmall"
+                        android:fontFamily="@font/roboto"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/shimmer_channel_logo_3"
+                        app:layout_constraintTop_toBottomOf="@id/shimmer_home_video_title_3" />
+
+                    <TextView
+                        android:id="@+id/shimmer_duration_3"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        style="@style/TextAppearance.Material3.LabelSmall"
+                        android:maxLength="6"
+                        android:layout_marginTop="4dp"
+                        android:background="@android:color/darker_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/shimmer_channel_name_3"
+                        app:layout_constraintTop_toBottomOf="@id/shimmer_home_video_title_3" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</com.facebook.shimmer.ShimmerFrameLayout>
